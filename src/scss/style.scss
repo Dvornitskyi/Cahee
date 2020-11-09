@@ -1,9 +1,15 @@
 //Fonts
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500;700&display=swap");
 
 //Components
 @import "./core/vars";
 @import "./core/mixins";
 @import "./core/common";
+@import "./core/fresh";
+@import "./core/about";
+@import "./core/tomato";
 @import "./core/gallery";
 @import "./core/blueberry";
+@import "./core/blog";
+@import "./core/contact";
+@import "./core/footer-contact";
