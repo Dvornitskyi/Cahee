@@ -61,15 +61,23 @@
     }
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .bluberry {
-    height: 750px;
+    height: 600px;
   }
   .bluberry__button {
     clear: both;
-    max-width: 100%;
+    width: 47%;
+    margin-top: 20px;
   }
-  /*.bluberry__interactive {
-    @include flex-col();
-  }*/
+  @media screen and (max-width: 300px) {
+    .bluberry {
+      height: 800px;
+    }
+  }
+  @media screen and (max-width: 170px) {
+    .bluberry {
+      height: 900px;
+    }
+  }
 }
