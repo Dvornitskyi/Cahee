@@ -1,6 +1,7 @@
 .about {
   height: 700px;
   width: 100%;
+  overflow-x: hidden;
   background-color: $blue-white;
   display: flex;
   justify-content: space-around;
@@ -19,10 +20,24 @@
   &__paragraph-first {
     margin-bottom: 20px;
   }
+  &__image {
+    width: 370px;
+    object-fit: cover;
+  }
 }
 .paragraph {
   font-family: $base-font;
   font-size: 17px;
   font-weight: 300;
   line-height: 27px;
+}
+@media screen and (max-width: 800px) {
+  .about__right-text {
+    position: absolute;
+    z-index: 3;
+    color: $black;
+  }
+  /*.about {
+    padding: 150px;
+  }*/
 }

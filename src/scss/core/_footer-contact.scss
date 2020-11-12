@@ -1,6 +1,7 @@
 .footer-contact {
   width: 100%;
   height: 90;
+  overflow-x: hidden;
   background-color: $footer-bg-color;
   color: $footer-text-color;
   font-family: $base-font;
@@ -20,6 +21,21 @@
     font-weight: 400;
   }
 }
+/*a:visited {
+  color: $footer-text-color;
+}*/
+a {
+  color: $footer-text-color;
+}
+
+a:active {
+  color: $footer-text-color;
+}
+
 a:visited {
+  color: $footer-text-color;
+}
+
+a:hover {
   color: $footer-text-color;
 }

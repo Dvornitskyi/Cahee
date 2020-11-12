@@ -1,8 +1,10 @@
 .tomato {
   width: 100%;
   height: 800px;
+  overflow-x: hidden;
   background-color: $tomato-bg;
-  @include flex(center, center);
+  @include flex(flex-start, center);
+  //@include flex(space-around, center);
   padding-left: 6%;
   &__left {
     width: 50%;
@@ -13,21 +15,25 @@
   }
   &__product {
     @include flex(center, center);
-    width: 66%;
-    height: 100%;
+    //width: 75%;
+    width: 300px;
+    height: 100px;
     border-right: 1px solid #9d9d9d;
+  }
+  &__image {
+    //margin-left: -100px;
   }
   &__icon {
     @include flex(center, center);
-    width: 34%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
   }
   &__buttom-svg {
     height: 55px;
     width: 55px;
   }
   &__element-list {
-    width: 66%;
+    width: 400px;
     height: 100px;
     background-color: $white;
     margin-bottom: 20px;
@@ -38,12 +44,69 @@
     position: relative;
     @include flex(center, center);
   }
+  &__buttom-text {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
   &__text {
     font-size: 90px;
     font-weight: 700;
     color: $white;
     position: absolute;
-    top: 200px;
-    left: 0;
+    top: auto;
+    left: auto;
   }
+}
+@media screen and (max-width: 800px) {
+  .tomato {
+    //padding: 5%;
+    position: relative;
+  }
+  .tomato__left {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    left: 65px;
+  }
+  .tomato__text {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .tomato__right {
+    width: 370px;
+    object-fit: cover;
+  }
+  .tomato_left {
+    //width: 370px;
+  }
+  .tomato__element-list {
+    width: 250px;
+  }
+  .tomato__product {
+    width: 150px;
+  }
+  .tomato__icon {
+    width: 100px;
+  }
+  .tomato__buttom-text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  /*.tomato__product {
+    @include flex(center, center);
+    width: 200px;
+  }
+  .tomato__icon {
+    @include flex(center, center);
+    width: 100px;
+  }
+  .tomato__buttom-svg {
+    height: 30px;
+    width: 30px;
+  }
+  .tomato__buttom-text {
+    font-weight: 500;
+    font-size: 12px;
+  }*/
 }
