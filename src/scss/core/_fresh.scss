@@ -3,6 +3,7 @@
   background-size: cover;
   width: 100%;
   height: 750px;
+  //height: 100vh;
   overflow-x: hidden;
   padding: 50px 150px;
 
@@ -77,11 +78,11 @@
   &__scroll {
     width: 24px;
     height: 40px;
-    /*position: absolute;
+    position: absolute;
     z-index: 5;
     bottom: 10%;
     right: auto;
-    left: auto;*/
+    left: auto;
   }
   &__color {
     color: $black;
@@ -93,16 +94,27 @@
 @media screen and (max-width: 800px) {
   .fresh__icon {
     margin-top: 50px;
+    &__button {
+      width: 100%;
+    }
   }
 }
 @media screen and (max-width: 470px) {
   .fresh {
     padding: 50px 50px;
+    &__button {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 @media screen and (max-width: 1000px) {
   .fresh {
     padding: 10px 50px;
+    &__button {
+      width: 100%;
+    }
     /* &__list {
       position: absolute;
       z-index: 1;
@@ -112,8 +124,15 @@
     }*/
   }
   @media screen and (max-width: 600px) {
+    .fresh__button {
+      width: 100%;
+    }
     .fresh__top {
-      visibility: hidden;
+      //visibility: hidden;
+      display: none;
+    }
+    .fresh__text {
+      margin-top: -100px;
     }
   }
 }

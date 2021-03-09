@@ -1,14 +1,17 @@
 .about {
   height: 700px;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow-x: hidden;
   background-color: $blue-white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   &__right-text {
     display: flex;
     flex-direction: column;
+    //text-align: center;
     color: $white;
     max-width: 499px;
   }
@@ -16,6 +19,7 @@
     font-family: $base-font;
     font-size: 90px;
     font-weight: 700;
+    text-align: center;
   }
   &__paragraph-first {
     margin-bottom: 20px;
@@ -36,6 +40,13 @@
     position: absolute;
     z-index: 3;
     color: $black;
+  }
+  .about {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__right-text {
+    width: 300px;
   }
   /*.about {
     padding: 150px;

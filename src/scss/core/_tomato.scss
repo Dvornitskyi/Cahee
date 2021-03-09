@@ -3,15 +3,21 @@
   height: 800px;
   overflow-x: hidden;
   background-color: $tomato-bg;
-  @include flex(flex-start, center);
+  //@include flex(flex-start, center);
   //@include flex(space-around, center);
+  @include flex(space-evenly, center);
   padding-left: 6%;
   &__left {
-    width: 50%;
+    //width: 50%;
+    //display: flex;
+    //$justify-content: flex-end;
   }
   &__buttom {
     height: 100%;
-    display: flex;
+    @include flex(flex-end, flex-end);
+    //display: flex;
+    //$justify-content: flex-end;
+    //$align-items: stretch,
   }
   &__product {
     @include flex(center, center);
@@ -40,9 +46,10 @@
     //@include flex(center, center);
   }
   &__right {
-    width: 50%;
+    //width: 50%;
     position: relative;
     @include flex(center, center);
+    //@include flex(flex-start, flex-start);
   }
   &__buttom-text {
     font-weight: 700;
