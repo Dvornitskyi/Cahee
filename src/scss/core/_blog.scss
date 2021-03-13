@@ -128,3 +128,12 @@
     }
   }
 }
+@media screen and (max-width: 400px) {
+  .blog {
+    height: 1500px;
+
+    &__more-text {
+      width: 280px;
+    }
+  }
+}

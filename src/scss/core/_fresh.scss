@@ -107,6 +107,9 @@
       display: flex;
       justify-content: center;
     }
+    &__text-buttom {
+      width: 280px;
+    }
   }
 }
 @media screen and (max-width: 1000px) {
